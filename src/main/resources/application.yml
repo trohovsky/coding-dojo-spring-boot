@@ -1,1 +1,10 @@
-
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: example
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+openweathermap:
+  url: http://api.openweathermap.org/data/2.5
+  app-id: cbe7f12bdcbc59e5e3f22ac8837a02b8
